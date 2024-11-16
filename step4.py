@@ -24,6 +24,9 @@ def lane_count_ratio(count1, count2):
 
 
 def confirm_car_lane(lanes, i):
+    """
+        Checks if the lane is a car lane
+    """
     res = False
     try:
         res = lanes[i] == "car"
