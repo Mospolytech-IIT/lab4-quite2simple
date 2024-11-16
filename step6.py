@@ -11,6 +11,14 @@ class InvalidAgeException(Exception):
         super().__init__(f"Invalid age: {age}. Age should be above or equal to 0")
 
 
+class UnderageException(Exception):
+    """
+        Person is underage
+    """
+    def __init__(self, age):
+        super().__init__(f"Person is underage (under 18). Age: {age}")
+
+
 class InvalidLaneTypeException(Exception):
     """
         Lane type is a bad value
